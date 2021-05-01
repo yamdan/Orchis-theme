@@ -7,62 +7,93 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="28"
-   height="28"
-   version="1.0"
-   id="svg6"
-   sodipodi:docname="activities.svg"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   style="enable-background:new">
+   id="Layer_1"
+   data-name="Layer 1"
+   width="28.000002"
+   height="28.000002"
+   viewBox="0 0 28.000002 28.000002"
+   version="1.1"
+   sodipodi:docname="pop.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
   <metadata
-     id="metadata12">
+     id="metadata25">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title>Pop_icon</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs10" />
+     id="defs23" />
   <sodipodi:namedview
-     pagecolor="#2e2e2e"
+     pagecolor="#ffffff"
      bordercolor="#666666"
+     inkscape:document-rotation="0"
      borderopacity="1"
      objecttolerance="10"
      gridtolerance="10"
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="706"
-     id="namedview8"
+     inkscape:window-width="1524"
+     inkscape:window-height="1634"
+     id="namedview21"
      showgrid="false"
-     inkscape:zoom="13.906433"
-     inkscape:cx="2.1832783"
-     inkscape:cy="14.410041"
-     inkscape:window-x="0"
-     inkscape:window-y="36"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg6" />
-  <circle
-     style="opacity:0.15;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.3066448;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-     id="path816"
-     cx="14"
-     cy="14"
-     r="14" />
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:zoom="14.768896"
+     inkscape:cx="-0.72089566"
+     inkscape:cy="9.2052758"
+     inkscape:window-x="1540"
+     inkscape:window-y="52"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <title
+     id="title2">Pop_icon</title>
   <g
-     transform="translate(2,-274)"
-     id="g4"
-     style="fill:#ffffff">
+     id="g18"
+     transform="matrix(0.02536998,0,0,0.02536998,2,1.97463)">
+    <g
+       id="g8">
+      <circle
+         cx="473"
+         cy="474"
+         r="473"
+         style="fill:#48b9c7"
+         id="circle4" />
+      <rect
+         x="223"
+         y="726"
+         width="500"
+         height="76.959999"
+         rx="37"
+         ry="37"
+         style="fill:#ffffff"
+         id="rect6" />
+    </g>
     <path
-       transform="translate(0,276)"
-       d="m 12,6 a 6,6 0 0 0 -6,6 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 6,6 0 0 0 -6,-6 z m 0,2 a 4,4 0 0 1 4,4 4,4 0 0 1 -4,4 4,4 0 0 1 -4,-4 4,4 0 0 1 4,-4 z"
-       style="fill:#ffffff;paint-order:fill markers stroke"
-       id="path2"
+       d="m 536,357 c -24,51 -64,92 -120,112 l 48,125 c 9,23 17,47 10,69 -7,22 -39,29 -62,5 -44,-47 -192,-343 -203,-365 -11,-22 -23,-40 -23,-62 1,-33 52,-67 77,-84 25,-17 74,-40 117,-41 43,-1 61,9 86,25 38,25 65,64 75,109 10,45 7,80 -5,105 M 423,301 c -9,-31 -28,-61 -53,-81 -5,-4 -11,-9 -18,-11 -46,-15 -26,62 -19,82 7,20 26,62 47,83 5,5 10,9 16,10 6,1 18,-5 23,-13 5,-8 6,-14 6,-22 a 128,128 0 0 0 -2,-48 z"
+       style="fill:#ffffff"
+       id="path10"
        inkscape:connector-curvature="0" />
+    <g
+       id="g16">
+      <path
+         d="m 625,664 c -2,9 -7,17 -15,22 -8,5 -27,5 -38,-4 -11,-9 -13,-24 -10,-36 3,-12 13,-25 27,-29 29,-9 42,23 36,47 z"
+         style="fill:#ffffff"
+         id="path12"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 607,573 c -18,-7 -12,-103 5,-220 5,-32 13,-48 22,-56 9,-8 36,-12 52,-9 a 90,90 0 0 1 49,24 c 12,11 13,23 9,38 -4,15 -18,47 -29,70 l -28,53 c -54,96 -65,106 -80,100 z"
+         style="fill:#ffffff"
+         id="path14"
+         inkscape:connector-curvature="0" />
+    </g>
   </g>
 </svg>
