@@ -11,7 +11,7 @@ SASSC_OPT=('-M' '-t' 'expanded')
 _COLOR_VARIANTS=('' '-light' '-dark')
 _GCOLOR_VARIANTS=('' '-dark')
 _SIZE_VARIANTS=('' '-compact')
-_THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey')
+_THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-pop')
 
 if [[ -n "${THEME_VARIANTS:-}" ]]; then
   IFS=', ' read -r -a _THEME_VARIANTS <<< "${THEME_VARIANTS:-}"

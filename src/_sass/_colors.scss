@@ -52,6 +52,7 @@
     @if ($theme == 'yellow') { @return $yellow-700; }
     @if ($theme == 'green') { @return $green-500; }
     @if ($theme == 'grey') { @return $grey-700; }
+    @if ($theme == 'pop') { @return #48b9c7; }
   } @else {
     @if ($theme == 'default') { @return #3281ea; }
     @if ($theme == 'purple') { @return $purple-300; }
@@ -61,6 +62,7 @@
     @if ($theme == 'yellow') { @return $yellow-a700; }
     @if ($theme == 'green') { @return $green-400; }
     @if ($theme == 'grey') { @return $grey-600; }
+    @if ($theme == 'pop') { @return #48b9c7; }
   }
 }
 

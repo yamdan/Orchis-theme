@@ -16,7 +16,7 @@ else
 fi
 
 THEME_NAME=Orchis
-THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey')
+THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-pop')
 COLOR_VARIANTS=('' '-light' '-dark')
 SIZE_VARIANTS=('' '-compact')
 
@@ -109,10 +109,10 @@ install() {
   ln -s assets/no-notifications.svg no-notifications.svg
   fi
 
-  mkdir -p                                                                      "$THEME_DIR/gtk-2.0"
-  cp -r "$SRC_DIR/gtk-2.0/common/"{apps.rc,hacks.rc,main.rc}                    "$THEME_DIR/gtk-2.0"
-  cp -r "$SRC_DIR/gtk-2.0/assets-folder/assets$theme${ELSE_DARK:-}"             "$THEME_DIR/gtk-2.0/assets"
-  cp -r "$SRC_DIR/gtk-2.0/gtkrc$theme${ELSE_DARK:-}"                            "$THEME_DIR/gtk-2.0/gtkrc"
+#  mkdir -p                                                                      "$THEME_DIR/gtk-2.0"
+#  cp -r "$SRC_DIR/gtk-2.0/common/"{apps.rc,hacks.rc,main.rc}                    "$THEME_DIR/gtk-2.0"
+#  cp -r "$SRC_DIR/gtk-2.0/assets-folder/assets$theme${ELSE_DARK:-}"             "$THEME_DIR/gtk-2.0/assets"
+#  cp -r "$SRC_DIR/gtk-2.0/gtkrc$theme${ELSE_DARK:-}"                            "$THEME_DIR/gtk-2.0/gtkrc"
 
   mkdir -p                                                                      "$THEME_DIR/gtk-3.0"
   cp -r "$SRC_DIR/gtk/assets$theme"                                             "$THEME_DIR/gtk-3.0/assets"
@@ -209,6 +209,10 @@ while [[ "$#" -gt 0 ]]; do
             ;;
           grey)
             themes+=("${THEME_VARIANTS[7]}")
+            shift
+            ;;
+          pop)
+            themes+=("${THEME_VARIANTS[8]}")
             shift
             ;;
           all)
