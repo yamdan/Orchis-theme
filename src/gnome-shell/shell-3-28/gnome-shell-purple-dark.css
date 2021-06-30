@@ -178,12 +178,12 @@ StScrollView StScrollBar {
 
 StScrollBar StBin#trough {
   margin: 6px;
-  border-radius: 100px;
+  border-radius: 9999px;
   background-color: rgba(255, 255, 255, 0.06);
 }
 
 StScrollBar StButton#vhandle, StScrollBar StButton#hhandle {
-  border-radius: 100px;
+  border-radius: 9999px;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 6px;
 }
@@ -1020,7 +1020,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: none;
 }
 
-.popup-menu .popup-menu-item.selected:checked {
+.popup-menu .popup-menu-item:checked.selected {
   background-color: #e5e5e5;
   color: rgba(0, 0, 0, 0.85);
 }
@@ -1030,7 +1030,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: rgba(0, 0, 0, 0.75);
 }
 
-.popup-menu .popup-menu-item.selected:checked:active {
+.popup-menu .popup-menu-item:checked.selected:active {
   background-color: #e0e0e0;
   color: rgba(0, 0, 0, 0.75);
 }
@@ -1104,21 +1104,20 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: none;
   padding: 0 0;
   margin: 0 0;
-  height: 0;
+  height: 4px;
 }
 
 .popup-separator-menu-item .popup-separator-menu-item-separator {
   background: none;
   padding: 0 0;
   margin: 0 0;
-  height: 0;
+  height: 1px;
 }
 
 .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
   background: none;
   padding: 0 0;
   margin: 0 0;
-  height: 0;
 }
 
 .system-switch-user-submenu-icon.user-icon {
@@ -1503,50 +1502,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #FF6D00;
 }
 
-#panel.solid {
-  background-color: #000000;
-  /* transition from transparent to solid */
-  transition-duration: 250ms;
-  background-gradient-direction: none;
-  text-shadow: none;
-}
-
-#panel.solid:overview {
-  background-color: transparent;
-}
-
-#panel.solid .panel-corner {
-  -panel-corner-background-color: rgba(0, 0, 0, 0.5);
-}
-
-#panel.solid .panel-button {
-  color: #dedede;
-  text-shadow: none;
-}
-
-#panel.solid .panel-button:active, #panel.solid .panel-button:overview, #panel.solid .panel-button:focus, #panel.solid .panel-button:checked {
-  color: rgba(255, 255, 255, 0.85);
-  text-shadow: none;
-}
-
-#panel.solid .system-status-icon,
-#panel.solid .app-menu-icon > StIcon,
-#panel.solid .popup-menu-arrow {
-  icon-shadow: none;
-}
-
-#panel.solid .system-status-icon:active, #panel.solid .system-status-icon:overview, #panel.solid .system-status-icon:focus, #panel.solid .system-status-icon:checked,
-#panel.solid .app-menu-icon > StIcon:active,
-#panel.solid .app-menu-icon > StIcon:overview,
-#panel.solid .app-menu-icon > StIcon:focus,
-#panel.solid .app-menu-icon > StIcon:checked,
-#panel.solid .popup-menu-arrow:active,
-#panel.solid .popup-menu-arrow:overview,
-#panel.solid .popup-menu-arrow:focus,
-#panel.solid .popup-menu-arrow:checked {
-  icon-shadow: none;
-}
-
 Gjs_AggregateMenu.panel-button,
 Gjs_ui_panel_AggregateMenu.panel-button,
 Gjs_ArcMenu_ApplicationsButton.panel-button,
@@ -1566,6 +1521,10 @@ Gjs_ui_panel_ActivitiesButton.panel-button {
   transition-duration: 0ms !important;
   box-shadow: none !important;
   color: transparent !important;
+}
+
+Gjs_ui_panel_ActivitiesButton.panel-button > * {
+  width: 36px;
 }
 
 Gjs_ui_panel_ActivitiesButton.panel-button:hover, Gjs_ui_panel_ActivitiesButton.panel-button:active, Gjs_ui_panel_ActivitiesButton.panel-button:overview, Gjs_ui_panel_ActivitiesButton.panel-button:focus, Gjs_ui_panel_ActivitiesButton.panel-button:checked {
@@ -1690,7 +1649,7 @@ Gjs_ui_panel_ActivitiesButton.panel-button:active, Gjs_ui_panel_ActivitiesButton
   width: 32px;
   height: 32px;
   margin: 2px;
-  border-radius: 100px;
+  border-radius: 9999px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1731,7 +1690,7 @@ Gjs_ui_panel_ActivitiesButton.panel-button:active, Gjs_ui_panel_ActivitiesButton
   height: 32px;
   padding: 0 0;
   margin: 2px;
-  border-radius: 1000px;
+  border-radius: 9999px;
   color: rgba(255, 255, 255, 0.7);
   border: none;
   font-feature-settings: "tnum";
@@ -1759,7 +1718,7 @@ Gjs_ui_panel_ActivitiesButton.panel-button:active, Gjs_ui_panel_ActivitiesButton
   height: 25px;
   margin-top: 2px;
   padding: 7px 0 0;
-  border-radius: 100px;
+  border-radius: 9999px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.5);
   font-size: 9pt;
@@ -2816,7 +2775,6 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .all-apps,
-.search-display > StBoxLayout,
 .frequent-apps > StBoxLayout {
   padding: 0px 88px 10px 88px;
 }

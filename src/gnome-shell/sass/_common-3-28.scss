@@ -119,12 +119,12 @@ StScrollBar {
 
   StBin#trough {
     margin: 6px;
-    border-radius: 100px;
+    border-radius: $circular_radius;
     background-color: $divider_color;
   }
 
   StButton#vhandle, StButton#hhandle {
-    border-radius: 100px;
+    border-radius: $circular_radius;
     background-color: $hint_fg_color;
     //border: 4px solid transparent; //would be nice to margin or at least to transparent
     margin: 6px;
@@ -909,19 +909,18 @@ $mdborder_color: if($variant == 'light', transparent, rgba($white, 0.15));
   border: none;
   padding: 0 0;
   margin: 0 0;
-  height: 0;
+  height: 4px;
 
   .popup-separator-menu-item-separator {
     background: none;
     padding: 0 0;
     margin: 0 0;
-    height: 0;
+    height: 1px;
 
     .popup-sub-menu & { //submenu separators
       background: none;
       padding: 0 0;
       margin: 0 0;
-      height: 0;
     }
   }
 }
@@ -946,7 +945,7 @@ $mdborder_color: if($variant == 'light', transparent, rgba($white, 0.15));
 }
 
 .aggregate-menu {
-  min-width: 21em;
+  min-width: if($laptop == 'true', 19em, 21em);
 
   .popup-menu-icon {
     padding: 0;
@@ -1279,40 +1278,6 @@ $mdborder_color: if($variant == 'light', transparent, rgba($white, 0.15));
 
   .screencast-indicator { color: $error_color; }
   .remote-access-indicator { color: $warning_color; } // > 3.29.4
-
-  &.solid {
-    background-color: $panel_bg;
-    /* transition from transparent to solid */
-    transition-duration: 250ms;
-    background-gradient-direction: none; // for Ubuntu session
-    text-shadow: none; // for Ubuntu session
-
-    &:overview { background-color: transparent; } // for Ubuntu session
-
-    .panel-corner {
-      -panel-corner-background-color: $panel_bg_color;
-    }
-
-    .panel-button {
-      color: $panel_fg_color;
-      text-shadow: none;
-
-      &:active, &:overview, &:focus, &:checked {
-        color: $inverse_fg_color;
-        text-shadow: none;
-      }
-    }
-
-    .system-status-icon,
-    .app-menu-icon > StIcon,
-    .popup-menu-arrow {
-      icon-shadow: none;
-
-      &:active, &:overview, &:focus, &:checked {
-        icon-shadow: none;
-      }
-    }
-  }
 }
 
 $size_suffix: if($laptop == 'true', '-small', '');
@@ -1337,6 +1302,8 @@ Gjs_ui_panel_ActivitiesButton.panel-button {
   transition-duration: 0ms !important;
   box-shadow: none !important;
   color: transparent !important;
+
+  > * { width: $medium_size; }
 
   &:hover, &:active, &:overview, &:focus, &:checked {
     background-color: transparent;
@@ -1441,7 +1408,7 @@ Gjs_ui_panel_ActivitiesButton.panel-button {
   width: $menuitem_size;
   height: $menuitem_size;
   margin: 2px;
-  border-radius: 100px;
+  border-radius: $circular_radius;
   background-color: transparent;
   color: $secondary_fg_color;
 
@@ -1469,7 +1436,7 @@ Gjs_ui_panel_ActivitiesButton.panel-button {
   height: $menuitem_size;
   padding: 0 0;
   margin: 2px;
-  border-radius: 1000px;
+  border-radius: $circular_radius;
   color: $secondary_fg_color;
   border: none;
   font-feature-settings: "tnum";
@@ -1493,7 +1460,7 @@ Gjs_ui_panel_ActivitiesButton.panel-button {
     width: $menuitem_size; height: $menuitem_size - 7px;
     margin-top: 2px;
     padding: 7px 0 0;
-    border-radius: 100px;
+    border-radius: $circular_radius;
     background-color: transparent;
     color: $hint_fg_color;
     @include font(caption);
@@ -2434,7 +2401,6 @@ StWidget.focused .app-well-app-running-dot {
 
 //Some hacks I don't even
 .all-apps,
-.search-display > StBoxLayout,
 .frequent-apps > StBoxLayout {
   // horizontal padding to make sure scrollbars or dash don't overlap content
   padding: 0px 88px 10px 88px;
